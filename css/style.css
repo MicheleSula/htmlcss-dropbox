@@ -5,7 +5,9 @@
     box-sizing: content-box;
 }
 
-
+.title {
+    font-size: 60px;
+}
 
 /* Header */
 header {
@@ -26,7 +28,6 @@ header {
 
 .nav-menu ul {
     display: flex;
-    gap: 10px;
     align-items: center;
     list-style-type: none;
     font-size: 18px;
@@ -35,16 +36,23 @@ header {
 .nav-menu ul li {
     display: flex;
     align-items: center;
+    text-decoration: none;
+    gap: 15px;
 }
 
-/* Main */
+.nav-menu ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 10px;
+}
 
+/* Jumbotron section */
 .background-color {
     position: relative;
 }
 
 .jumbotron {
-    width: 60%;
+    max-width: 60%;
     margin: auto;
     position: absolute;
     top: 200px;
@@ -76,7 +84,80 @@ header {
     height: 100%;
 }
 
-/* Debugging rules */
+/* Business plans section */
+.business-plans-container {
+    max-width: 50%;
+    margin: auto;
+    margin-top: 150px;
+}
+
+/* Radio buttons */
+.radio-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.container {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    user-select: none;
+  }
+  
+
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .container .checkmark:after {
+      top: 5px;
+      left: 5px;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: white;
+  }
+
+  /* Plans-wrapper */
+
+  .plans-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+/* DEBUG - - - - - DEBUG - - - - - DEBUG */
 
 header {
     background-color: yellow;
@@ -93,6 +174,8 @@ header {
     width: 100px;
     height: 50px;
 }
+
+/* JUMBOTRON SECTION */
 
 .background-color {
     background-color: lightgray;
@@ -118,3 +201,15 @@ header {
 
 }
 
+/* BUSINESS PLANS SECTION */
+
+.business-plans-container {
+    background-color: palegreen;
+    height: 700px;
+}
+
+.plans-wrapper {
+    width: 100%;
+    background-color: olive;
+    height: 80%;
+  }
