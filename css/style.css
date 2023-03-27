@@ -3,6 +3,11 @@
     margin: 0;
     padding: 0;
     box-sizing: content-box;
+    list-style-type: none;
+}
+
+body {
+    
 }
 
 .title {
@@ -157,6 +162,37 @@ header {
     justify-content: space-between;
     width: 100%;
   }
+
+  .plan-cards {
+    width: 30%;
+    height: 100%;
+  }
+
+  .plan-cards-first-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    border: gray groove 1px;
+  }
+
+  .plan-cards-second-row {
+    display: flex;
+    justify-content: center;
+    height: calc(100% - 41px);
+  }
+
+  .second-row-container {
+    display: flex;
+    width: 80%;
+    height: 100%;
+    background-color: aquamarine;
+  }
+
+
+
+
+
 /* DEBUG - - - - - DEBUG - - - - - DEBUG */
 
 header {
@@ -213,3 +249,10 @@ header {
     background-color: olive;
     height: 80%;
   }
+
+.plan-cards {
+    width: 30%;
+    height: 100%;
+    background-color: #ccc;
+    border: solid 1px black;
+  }  
