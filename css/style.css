@@ -1,0 +1,120 @@
+/* General rules */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+
+
+/* Header */
+header {
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 98%;
+    margin: auto;
+    
+}
+
+.nav-menu ul {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    list-style-type: none;
+    font-size: 18px;
+}
+
+.nav-menu ul li {
+    display: flex;
+    align-items: center;
+}
+
+/* Main */
+
+.background-color {
+    position: relative;
+}
+
+.jumbotron {
+    width: 60%;
+    margin: auto;
+    position: absolute;
+    top: 200px;
+    left: 20%;
+}
+
+.jumbotron-top {
+    height: 34%;
+}
+#main-title {
+    font-size: 80px;
+}
+
+.jumbotron-bottom {
+    display: flex;
+    justify-content: space-between;
+    height: 66%;
+}
+
+.jumbotron-bottom .left {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 80%;
+}
+
+.jumbotron-bottom .right {
+    width: 55%;
+    height: 100%;
+}
+
+/* Debugging rules */
+
+header {
+    background-color: yellow;
+}
+
+.nav-menu {
+    background-color: pink;
+    border: 2px dotted black;
+}
+
+.nav-menu ul li {
+    background-color: brown;
+    border: 1px solid white;
+    width: 100px;
+    height: 50px;
+}
+
+.background-color {
+    background-color: lightgray;
+    height: 700px;
+    width: 100%;
+}
+
+.jumbotron {
+    background-color: rgb(224, 17, 17);
+    height: 550px;
+    border: 2px dotted black;
+}
+
+.jumbotron-bottom .left {
+    background-color: rgb(201, 118, 17);
+    border: 2px dotted white;
+
+}
+
+.jumbotron-bottom .right {
+    background-color: rgb(201, 118, 17);
+    border: 2px dotted white;
+
+}
+
