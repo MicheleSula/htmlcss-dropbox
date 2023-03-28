@@ -30,10 +30,15 @@ body {
         color: white;
     }
 
+    .btn.white-btn {
+      color: black;
+      border: 1px solid black;
+    }
+
     /* Font-size rules */
 
     .title {
-        font-size: 50px;
+        font-size: 40px;
     }
 
     .subtitle-font-size {
@@ -106,7 +111,7 @@ header {
 }
 
 .jumbotron-top {
-    height: 34%;
+    height: 40%;
 }
 #main-title {
     font-size: 80px;
@@ -115,7 +120,7 @@ header {
 .jumbotron-bottom {
     display: flex;
     justify-content: space-between;
-    height: 66%;
+    height: 60%;
 }
 
 .jumbotron-bottom .left {
@@ -297,8 +302,64 @@ header {
   .horizontal-plan-left .plans {
     margin-bottom: 60px;
   }
-/* DEBUG - - - - - DEBUG - - - - - DEBUG */
 
+  /* Dropbox partner */
+
+  .dropbox-partner {
+    height: 600px;
+    margin-top: 150px;
+    display: flex;
+  }
+
+  .dropbox-partner-left {
+    height: 100%;
+    width: 60%;
+  }
+
+  .dropbox-partner-left img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .dropbox-partner-right {
+    width: 35%;
+    margin-left: 40px;
+  }
+
+  .dropbox-partner-right span {
+    display: block;
+    margin-top: 40px;
+  }
+
+  .dropbox-partner-right p {
+    margin: 30px 0;
+  }
+
+  .dropbox-business-container {
+    max-width: 50%;
+    margin: auto;
+  }
+
+  .dropbox-business-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+
+  .dropbox-business-col {
+    width: 30%;
+  }
+
+  .dropbox-business-col img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  .dropbox-business-col p {
+    margin-top: 30px;
+  }
+
+/* DEBUG - - - - - DEBUG - - - - - DEBUG - - - - - DEBUG */
 header {
     background-color: yellow;
 }
@@ -316,7 +377,6 @@ header {
 }
 
 /* JUMBOTRON SECTION */
-
 .background-color {
     background-color: lightgray;
     height: 700px;
@@ -342,7 +402,6 @@ header {
 }
 
 /* BUSINESS PLANS SECTION */
-
 .business-plans-container {
     background-color: palegreen;
 }
@@ -362,4 +421,9 @@ header {
     background-color: #ccc;
     border: solid 1px black;
 
+}
+
+/* DROPBOX BUSINESS SECTION */
+.dropbox-business-container {
+  background-color: lightpink;
 }
