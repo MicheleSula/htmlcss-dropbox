@@ -7,12 +7,53 @@
 }
 
 body {
-    
+    font-family: 'Open Sans';
+    font-size: 16px;
 }
 
-.title {
-    font-size: 60px;
+.line-divider {
+    color: #ccc;
 }
+
+.short {
+    width: 45px;
+}
+    /* Btn rules */
+    .btn {
+        padding: 10px 20px;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .btn.blue-btn {
+        background-color: #2196F3;
+        color: white;
+    }
+
+    /* Font-size rules */
+
+    .title {
+        font-size: 50px;
+    }
+
+    .subtitle-font-size {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .price-font-size {
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .month-subscription-font-size {
+        font-size: 12px;
+        color: #ccc;
+    }
+
+    .font-size--14 {
+        font-size: 14px;
+    }
 
 /* Header */
 header {
@@ -89,6 +130,10 @@ header {
     height: 100%;
 }
 
+.jumbotron-bottom .right img {
+    height: 100%;
+}
+
 /* Business plans section */
 .business-plans-container {
     max-width: 50%;
@@ -107,7 +152,6 @@ header {
     padding-left: 35px;
     margin-bottom: 12px;
     cursor: pointer;
-    font-size: 22px;
     user-select: none;
   }
   
@@ -157,6 +201,7 @@ header {
 
   /* Plans-wrapper */
 
+
   .plans-wrapper {
     display: flex;
     justify-content: space-between;
@@ -164,7 +209,7 @@ header {
   }
 
   .plan-cards {
-    width: 30%;
+    width: 31%;
     height: 100%;
   }
 
@@ -184,15 +229,74 @@ header {
 
   .second-row-container {
     display: flex;
+    flex-direction: column;
     width: 80%;
     height: 100%;
     background-color: aquamarine;
   }
 
+  .plans {
+    margin: 10px 0;
+  }
 
+  .plans li {
+    padding: 5px 0;
+  }
 
+  .plans-description {
+    margin: 20px 0 50px;
+  }
 
+  .plans-description li {
+    padding: 5px 0;
+  }
 
+  
+  .second-row-container .btn.blue-btn {
+    margin-bottom: 35px;
+  }
+
+  .second-row-container .line-divider.short {
+    margin: 35px 0;
+  }
+
+  .checked-list {
+    margin-bottom: 35px;
+  }
+
+  /* Horizontal plan card */
+
+  .horizontal-plan-card {
+    margin-top: 40px;
+    width: 100%;
+  }
+
+  .plan-cards-second-row.horizontal {
+    width: 93%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .horizontal-plan-left {
+    width: 66.5%;
+    height: 100%;
+  }
+
+  .horizontal-plan-right {
+    width: 29.5%;
+    height: 100%;
+  }
+
+  .horizontal-plan-right .btn.blue-btn {
+    display: block;
+    margin-top: 50px;
+    margin-left: 10%;
+  }
+ 
+  .horizontal-plan-left .plans {
+    margin-bottom: 60px;
+  }
 /* DEBUG - - - - - DEBUG - - - - - DEBUG */
 
 header {
@@ -241,7 +345,6 @@ header {
 
 .business-plans-container {
     background-color: palegreen;
-    height: 700px;
 }
 
 .plans-wrapper {
@@ -251,8 +354,12 @@ header {
   }
 
 .plan-cards {
-    width: 30%;
-    height: 100%;
     background-color: #ccc;
     border: solid 1px black;
-  }  
+  } 
+
+.horizontal-plan-card {
+    background-color: #ccc;
+    border: solid 1px black;
+
+}
