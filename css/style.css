@@ -18,6 +18,11 @@ body {
 .short {
     width: 45px;
 }
+
+.medium {
+  width: 130px;
+  margin: 50px 0;
+}
     /* Btn rules */
     .btn {
         padding: 10px 20px;
@@ -383,16 +388,44 @@ header {
     width: calc(100% / 3); 
   }
 
+  /* Left and right squares */
   .slideshow-inner-row {
     display: flex;
     height: 50%;
     width: 100%;
   }
 
+
   .col-square {
     height: 100%;
     width: 50%;
+    position: relative;
+    
   }
+
+  .col-square img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; 
+  }
+
+  /* Middle square */
+  .slideshow-col-container {
+    width: 80%;
+    height: 80%;
+    margin: 10% 10%;
+  }
+
+  .slideshow-col-container img {
+    width: 40%;
+  }
+
+  .slideshow-col-container p {
+    margin-bottom: 50px;
+  }
+  
 
 
 
