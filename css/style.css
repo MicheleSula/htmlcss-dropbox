@@ -11,6 +11,8 @@ body {
     font-size: 16px;
 }
 
+/* Lines rules */
+
 .line-divider {
     color: #ccc;
 }
@@ -23,6 +25,7 @@ body {
   width: 130px;
   margin: 50px 0;
 }
+
     /* Btn rules */
     .btn {
         padding: 10px 20px;
@@ -38,6 +41,11 @@ body {
     .btn.white-btn {
       color: black;
       border: 1px solid black;
+    }
+
+    .btn.borderless-btn {
+      background-color: white;
+      color: black;
     }
 
     /* Font-size rules */
@@ -105,6 +113,7 @@ header {
 /* Jumbotron section */
 .background-color {
     position: relative;
+    background-color: #b4c8e1;
 }
 
 .jumbotron {
@@ -425,6 +434,28 @@ header {
   .slideshow-col-container p {
     margin-bottom: 50px;
   }
+
+  /* AZURE CTA BOX */
+
+  .azure-background {
+    width: 100%;
+    height: 400px;
+    background-color: #b4c8e1;
+  }
+
+  .cta-container {
+    max-width: 50%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .cta-container h2 {
+    color: darkred;
+    width: 50%;
+  }
   
 
 
@@ -457,7 +488,6 @@ header {
 
 /* JUMBOTRON SECTION */
 .background-color {
-    background-color: lightgray;
     height: 700px;
     width: 100%;
 }
@@ -523,4 +553,12 @@ header {
 .col-square {
    background-color: chartreuse;
    border: white 1px solid;
+}
+
+/* AZURE CTA BOX section */
+
+.cta-container {
+  max-width: 50%;
+  background-color: #eee;
+  border: 1px solid black;
 }
