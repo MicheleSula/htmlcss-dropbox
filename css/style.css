@@ -321,6 +321,7 @@ h1#main-title {
     width: 15px;
     margin-right: 5px;
   }
+
   /* Horizontal plan card */
 
   .horizontal-plan-card {
@@ -424,6 +425,7 @@ h1#main-title {
 
   .slideshow-container {
     width: 100%;
+    background-color: rgb(236, 234, 234);
   }
 
   .slideshow-row {
@@ -473,6 +475,24 @@ h1#main-title {
   .slideshow-col-container p {
     margin-bottom: 50px;
   }
+
+  /* Little squares background color */
+  .col-square.square-1 {
+    background-color: lightgreen;
+  }
+
+  .col-square.square-2 {
+    background-color: brown;
+  }
+
+  .col-square.square-3 {
+    background-color: #2196F3;
+  }
+
+  .col-square.square-4 {
+    background-color: red;
+  }
+
 
   /* AZURE CTA BOX */
 
@@ -561,56 +581,4 @@ footer {
 .page-lang {
   color: lightgray;
   font-size: 13px;
-}
-
-
-
-
-
-
-
-
-
-
-                                                                  /* DEBUG - - - - - DEBUG - - - - - DEBUG - - - - - DEBUG */
-
-/* BUSINESS PLANS SECTION */
-
-
-
-/* DROPBOX BUSINESS SECTION */
-.dropbox-business-container {
-background-color: lightpink;
-}
-
-/* Slideshow section */
-
-.slideshow-container {
-width: 100%;
-height: 600px;
-background-color: #ccc;
-}
-
-.slideshow-col {
-background-color: blanchedalmond;
-border: #2196F3 solid 1px;
-}
-
-.col-square {
- background-color: chartreuse;
- border: white 1px solid;
-}
-
-/* AZURE CTA BOX section */
-
-.cta-container {
-max-width: 50%;
-background-color: #eee;
-border: 1px solid black;
-}
-
-/* FAQ SECTION */
-
-.faq-container {
-background-color: beige;
 }
